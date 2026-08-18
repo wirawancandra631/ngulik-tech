@@ -17,9 +17,9 @@ theme ='congo'
   image = '/images/profil.png'
   headline = 'Hello World'
   links = [
-    {github=""},
-    {instagram=""},
-    {linkedin=""},
+    {github="https://github.com/wirawancandra631"},
+    {instagram="https://www.instagram.com/w_candra99/"},
+    {linkedin="www.linkedin.com/in/candra-wirawan-2bb85430a"},
   ]
 [params.footer]
  showAppearanceSwitcher=true
