@@ -1,0 +1,27 @@
+baseURL = 'https://github.io'
+canonifyURLs = true
+title = 'Ngulik Tech'
+theme ='congo'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+[params]
+  colorScheme="avocado"
+  defaultAppearance="dark"
+  autoSwitchAppearance=true
+[params.homepage]
+  layout="profile"
+  showRecent=true
+[params.author]
+  name="Candra Wirawan"
+  image = '/images/profil.png'
+  headline = 'Hello World'
+  links = [
+    {github=""},
+    {instagram=""},
+    {linkedin=""},
+  ]
+[params.footer]
+ showAppearanceSwitcher=true
+[params.article]
+
