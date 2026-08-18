@@ -19,7 +19,7 @@ theme ='congo'
   links = [
     {github="https://github.com/wirawancandra631"},
     {instagram="https://www.instagram.com/w_candra99/"},
-    {linkedin="https.linkedin.com/in/candra-wirawan-2bb85430a"},
+    {linkedin="https://linkedin.com/in/candra-wirawan-2bb85430a"},
   ]
 [params.footer]
  showAppearanceSwitcher=true
