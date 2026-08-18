@@ -11,7 +11,7 @@
   class="scroll-smooth"
   data-default-appearance="dark"
   data-auto-appearance="true"
-><head><script src="/ngulik-tech/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ngulik-tech/livereload" data-no-instant defer></script>
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#FFFFFF" />
@@ -25,7 +25,7 @@
   
   <script
     type="text/javascript"
-    src="http://localhost:1313/ngulik-tech/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    src="http://localhost:1313/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
     integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
   ></script>
   
@@ -39,7 +39,7 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="http://localhost:1313/ngulik-tech/css/main.bundle.min.87a56e3f27f6536f72d6aad25ed110d8712b4946bcb24e068933a583f0f0f58a.css"
+    href="http://localhost:1313/css/main.bundle.min.87a56e3f27f6536f72d6aad25ed110d8712b4946bcb24e068933a583f0f0f58a.css"
     integrity="sha256-h6VuPyf2U29y1qrSXtEQ2HErSUa8sk4GiTOlg/Dw9Yo="
   />
   
@@ -99,23 +99,23 @@ Saat kita membangun sebuah aplikasi , kita pasti akan dihadapkan pada sebuah sit
   
   
   
-    <link rel="canonical" href="http://localhost:1313/ngulik-tech/blog/job-queue/" />
+    <link rel="canonical" href="http://localhost:1313/blog/job-queue/" />
   
   
   
-    <link rel="apple-touch-icon" sizes="180x180" href="/ngulik-tech/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/ngulik-tech/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/ngulik-tech/favicon-16x16.png" />
-    <link rel="manifest" href="/ngulik-tech/site.webmanifest" />
-  
-  
-  
-  
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png" />
+    <link rel="manifest" href="http://localhost:1313/site.webmanifest" />
   
   
   
   
-  <meta property="og:url" content="http://localhost:1313/ngulik-tech/blog/job-queue/">
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/blog/job-queue/">
 	<meta property="og:site_name" content="Ngulik Tech">
 	<meta property="og:title" content="Job Queue ">
 	<meta property="og:description" content="USER │ │ Request ▼ ┌─────────────┐ │ Application │ └──────┬──────┘ │ │ Dispatch Job ▼ ┌─────────────┐ │ QUEUE │ │ │ │ ┌─────────┐ │ │ │ Job #1 │ │ │ │ Job #2 │ │ │ │ Job #3 │ │ │ └─────────┘ │ └──────┬──────┘ │ │ Worker mengambil Job ▼ ┌─────────────┐ │ QUEUE │ │ WORKER │ └──────┬──────┘ │ ┌────────┼────────┐ ▼ ▼ ▼ Kirim Proses Generate Email Data Report │ │ │ └────────┼────────┘ ▼ ┌──────────┐ │ Selesai │ └──────────┘ Saat kita membangun sebuah aplikasi , kita pasti akan dihadapkan pada sebuah situasi di mana kita melakukan sebuah proses yang cukup berat dan memakan waktu yang lama , beberapa proses seperti">
@@ -141,7 +141,7 @@ Saat kita membangun sebuah aplikasi , kita pasti akan dihadapkan pada sebuah sit
     
     "abstract": "\u003cpre\u003e\u003ccode\u003e             USER\n              │\n              │ Request\n              ▼\n        ┌─────────────┐\n        │ Application │\n        └──────┬──────┘\n               │\n               │ Dispatch Job\n               ▼\n        ┌─────────────┐\n        │    QUEUE    │\n        │             │\n        │ ┌─────────┐ │\n        │ │ Job #1  │ │\n        │ │ Job #2  │ │\n        │ │ Job #3  │ │\n        │ └─────────┘ │\n        └──────┬──────┘\n               │\n               │ Worker mengambil Job\n               ▼\n        ┌─────────────┐\n        │    QUEUE    │\n        │   WORKER    │\n        └──────┬──────┘\n               │\n      ┌────────┼────────┐\n      ▼        ▼        ▼\n   Kirim     Proses    Generate\n   Email     Data      Report\n      │        │        │\n      └────────┼────────┘\n               ▼\n         ┌──────────┐\n         │ Selesai  │\n         └──────────┘\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003cp\u003eSaat kita membangun sebuah aplikasi , kita pasti akan dihadapkan pada sebuah situasi di mana kita melakukan sebuah proses yang cukup berat dan memakan waktu yang lama , beberapa proses seperti\u003c\/p\u003e",
     "inLanguage": "en",
-    "url" : "http:\/\/localhost:1313\/ngulik-tech\/blog\/job-queue\/",
+    "url" : "http:\/\/localhost:1313\/blog\/job-queue\/",
     "author" : {
       "@type": "Person",
       "name": "Candra Wirawan"
@@ -166,13 +166,13 @@ Saat kita membangun sebuah aplikasi , kita pasti akan dihadapkan pada sebuah sit
    "itemListElement": [
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ngulik-tech/",
+       "item": "http://localhost:1313/",
        "name": "",
        "position": 1
      },
      {
        "@type": "ListItem",
-       "item": "http://localhost:1313/ngulik-tech/blog/",
+       "item": "http://localhost:1313/blog/",
        "name": "Blogs",
        "position": 2
      },
@@ -234,7 +234,7 @@ Saat kita membangun sebuah aplikasi , kita pasti akan dihadapkan pada sebuah sit
   <a
     class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
     rel="me"
-    href="/ngulik-tech/"
+    href="http://localhost:1313/"
     >Ngulik Tech</a
   >
 
@@ -398,12 +398,12 @@ Saat kita membangun sebuah aplikasi , kita pasti akan dihadapkan pada sebuah sit
         alt="Candra Wirawan"
         loading="lazy" decoding="async"
         
-          src="http://localhost:1313/ngulik-tech/images/profil_hu_4816e062eab80c7b.png" srcset="http://localhost:1313/ngulik-tech/images/profil_hu_2e360a0e70b196d.png 330w,http://localhost:1313/ngulik-tech/images/profil_hu_4816e062eab80c7b.png 660w
+          src="http://localhost:1313/images/profil_hu_4816e062eab80c7b.png" srcset="http://localhost:1313/images/profil_hu_2e360a0e70b196d.png 330w,http://localhost:1313/images/profil_hu_4816e062eab80c7b.png 660w
           
-            ,http://localhost:1313/ngulik-tech/images/profil_hu_d74f770be1eca99e.png 1024w
+            ,http://localhost:1313/images/profil_hu_d74f770be1eca99e.png 1024w
           
           
-            ,http://localhost:1313/ngulik-tech/images/profil.png 1254w
+            ,http://localhost:1313/images/profil.png 1254w
           "
           sizes="100vw"
         
@@ -488,7 +488,7 @@ Saat kita membangun sebuah aplikasi , kita pasti akan dihadapkan pada sebuah sit
         </span>
         <span>
           
-            <a class="group flex text-right" href="http://localhost:1313/ngulik-tech/blog/laravel-filament/">
+            <a class="group flex text-right" href="http://localhost:1313/blog/laravel-filament/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
